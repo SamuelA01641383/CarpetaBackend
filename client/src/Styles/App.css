@@ -1,0 +1,91 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+p{
+  color: white;
+}
+.bg{
+  background-color: rgb(52,50,57);
+  width: 100%;
+  float:left;
+}
+.bg2{
+height: 100vh;
+width: 100%;
+background-color: rgb(52,50,57);
+}
+.App{
+  height: 100vh;
+  width: 100vh;
+  background-color: darkgrey;
+}
+.header{
+  float: left;
+  width: 100%;
+  height: 10vh;
+  background-color:rgb(72,85,104);
+  text-align: center;
+  font-size: 2vh;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: aliceblue;
+  text-shadow: 2px 0px black;
+  border-color: black;
+  border-bottom-style: solid;
+  border-width: 0.5vh;
+  margin-bottom: 1.25vh;
+}
+.contenedor{
+  float: left;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-color: black;
+  border-bottom-style: solid;
+  border-width: 0.5vh;
+  margin-bottom: 1.25vh;
+  height: auto;
+}
+
+button{
+
+  width: 10vh;
+  height: 5vh;
+  border-radius: 10px;
+  border-color: rgb(52,50,57);
+  float: right;
+  margin-top: .5vh;
+  margin-left: 2vh;
+  font-size: 1.5vh;
+  background-color: rgb(72,85,104);
+  
+}
+a{
+  color: white;
+}
+
+.imgbox{
+  float: left;
+  width: 20%;
+  height: 25vh;
+  margin: 1.2vh;
+  border-color: rgb(72,85,104);
+  border-style: groove;
+  border-radius: 5px;
+}
+.texto{
+  float: left;
+  width: 60%;
+
+}
+h2{
+  font-size: 4vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+h3{
+  font-size: 3vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+.box{
+  float: left;
+  margin-right: 5vh;
+}
