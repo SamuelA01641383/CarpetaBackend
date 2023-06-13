@@ -30,7 +30,7 @@ const Update = () => {
     const handleClick = async e =>{
         e.preventDefault()
         try{
-            await axios.put("http://us-cdbr-east-06.cleardb.net:" + PORT + "/juegos/"+ idJuego, juego)
+            await axios.put("https://us-cdbr-east-06.cleardb.net:" + PORT + "/juegos/"+ idJuego, juego)
             navigate("/")
         }catch(err){
             console.log(err)
