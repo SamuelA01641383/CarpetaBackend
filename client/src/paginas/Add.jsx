@@ -22,7 +22,7 @@ const Add = () => {
     const handleClick = async e =>{
         e.preventDefault()
         try{
-            await axios.post("http://localhost:8800/juegos", juego)
+            await axios.post("http://us-cdbr-east-06.cleardb.net:" + PORT + "/juegos", juego)
             navigate("/")
         }catch(err){
             console.log(err)

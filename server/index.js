@@ -41,7 +41,6 @@ app.post("/juegos", (req, res)=>{
         return res.json("Juego añadido");
     });
 });
-//http://localhost:8800/juegos/"+id
 
 app.delete("/juegos/:id", (req,res)=>{
     const idJuegos = req.params.id;

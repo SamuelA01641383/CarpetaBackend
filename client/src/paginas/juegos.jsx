@@ -4,6 +4,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import { Link } from "react-router-dom";
 import '../Styles/App.css'
+import PORT from '../server/index.js'
 
 const Juegos = () => {
     const [juegos, setJuegos] = useState([])
@@ -11,7 +12,7 @@ const Juegos = () => {
     useEffect(()=>{
         const fetchjuegos = async ()=>{
             try{
-                const res = await axios.get("http://localhost:8800/juegos")
+                const res = await axios.get("http://us-cdbr-east-06.cleardb.net:" + PORT + "/juegos")
                 setJuegos(res.data);
             }catch(err){
                 console.log(err)
@@ -22,7 +23,7 @@ const Juegos = () => {
 
     const handleDelete = async (id)=>{
         try{
-            await axios.delete("http://localhost:8800/juegos/"+id)
+            await axios.delete("http://us-cdbr-east-06.cleardb.net:" + PORT + "/juegos/"+id)
             window.location.reload()
         }catch(err){
             console.log(err)
