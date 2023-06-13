@@ -31,7 +31,7 @@ REPOSITORIO:
 
 https://github.com/SamuelA01641383/CarpetaBackend
 
-ADVERTENCIA: El repositorio en el archivo no se encuentra cactualizado, este contiene los cambios realizados para hacer deployment.
+ADVERTENCIA: El repositorio en el archivo PDF en canvas no se encuentra actualizado, este contiene los cambios realizados para hacer deployment.
 
 # ¿Cómo se usa? 
 
