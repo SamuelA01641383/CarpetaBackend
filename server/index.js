@@ -1,23 +1,14 @@
 import express from "express"
 import mysql from "mysql"
 import cors from "cors"
-import{PORT} from 'config.js'
-import{
-    DB_HOST,
-    DB_USER,
-    DB_PASSWORD, 
-    DB_NAME, 
-    DB_PORT
-} from './config.js'
 
 const app = express()
 
 const base = mysql.createConnection({
-    host: DB_HOST,
-    user: DB_USER,
-    password: DB_PASSWORD,
-    database: DB_NAME,
-    port: DB_PORT
+    host: "us-cdbr-east-06.cleardb.net",
+    user: "babf360dca1795",
+    password: "b984dfe7",
+    database: "heroku_cb8597b2deefbe3"
 })
 
 app.use(express.json())
@@ -80,6 +71,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../client/public', 'index.html'));
     });
 
-app.listen(PORT, ()=>{
-    console.log("The Backend lives.. FOR EVER", PORT);
+app.listen(8800, ()=>{
+    console.log("The Backend lives.. FOR EVER", 8800);
 })
