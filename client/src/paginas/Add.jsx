@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../Styles/App.css'
 import { Link } from 'react-router-dom';
+import PORT from './server/index.js'
+
+
 const Add = () => {
     const [juego, setJuego] = useState({
         Nombre:"",

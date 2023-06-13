@@ -5,6 +5,8 @@ import axios from 'axios';
 import { useLocation } from 'react-router-dom';
 import '../Styles/App.css'
 import { Link } from 'react-router-dom';
+import PORT from './server/index.js'
+
 
 const Update = () => {
     const [juego, setJuego] = useState({
