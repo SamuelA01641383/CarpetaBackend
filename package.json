@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "engines": {
     "node": "20.2.0",
     "npm": "9.7.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.cjs",
+    "start": "node server/index.js",
     "build": "cd client && npm install && npm run build"
   },
   "keywords": [],
