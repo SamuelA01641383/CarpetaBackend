@@ -4,7 +4,8 @@ import { useState } from 'react'
 import axios from 'axios'
 import { Link } from "react-router-dom";
 import '../Styles/App.css'
-import PORT from './server/index.js'
+
+const PORT = process.env.PORT || 3001;
 
 const Juegos = () => {
     const [juegos, setJuegos] = useState([])

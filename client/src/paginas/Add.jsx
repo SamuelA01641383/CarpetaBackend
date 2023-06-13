@@ -6,6 +6,7 @@ import '../Styles/App.css'
 import { Link } from 'react-router-dom';
 import PORT from '../../../server/index.js'
 
+const PORT = process.env.PORT || 3001;
 
 const Add = () => {
     const [juego, setJuego] = useState({
