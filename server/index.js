@@ -12,6 +12,8 @@ const base = mysql.createConnection({
     database: "heroku_cb8597b2deefbe3"
 })
 
+const PORT = process.env.PORT || 3001;
+
 app.use(express.json())
 app.use(cors())
 
@@ -70,6 +72,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../client/public', 'index.html'));
     });
 
-app.listen(8800, ()=>{
-    console.log("The Backend lives.. FOR EVER", 8800);
-})
+    app.listen(PORT, () => {
+        console.log(`Server listening on ${PORT}`);
+      });
