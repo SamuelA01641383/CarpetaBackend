@@ -13,7 +13,8 @@ const Juegos = () => {
     useEffect(()=>{
         const fetchjuegos = async ()=>{
             try{
-                const res = await axios.get("http://us-cdbr-east-06.cleardb.net:" + PORT + "/juegos")
+                //http://localhost:8800/juegos
+                const res = await axios.get("/juegos")
                 setJuegos(res.data);
             }catch(err){
                 console.log(err)
