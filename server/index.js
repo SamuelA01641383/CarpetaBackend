@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json())
 app.use(cors())
 
-app.use(express.static(path.resolve(__dirname, '../client/public')));
+app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.get("/", (req, res)=>{
     res.json("The backend sends its regards");
@@ -69,7 +69,7 @@ app.put("/juegos/:id", (req,res)=>{
 
 
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../client/public', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
     });
 
     app.listen(PORT, () => {
