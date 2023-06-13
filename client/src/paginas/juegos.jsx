@@ -25,7 +25,7 @@ const Juegos = () => {
 
     const handleDelete = async (id)=>{
         try{
-            await axios.delete("http://us-cdbr-east-06.cleardb.net:" + PORT + "/juegos/"+id)
+            await axios.delete("/juegos/"+id)
             window.location.reload()
         }catch(err){
             console.log(err)
