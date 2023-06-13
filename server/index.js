@@ -15,8 +15,6 @@ const base = mysql.createConnection({
 app.use(express.json())
 app.use(cors())
 
-//const path = require('path');
-
 app.use(express.static(path.resolve(__dirname, '../client/public')));
 
 app.get("/", (req, res)=>{
