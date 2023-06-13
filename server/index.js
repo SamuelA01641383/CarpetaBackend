@@ -1,6 +1,7 @@
 import express from "express"
 import mysql from "mysql"
 import cors from "cors"
+import path from "path"
 
 const app = express()
 
@@ -14,7 +15,7 @@ const base = mysql.createConnection({
 app.use(express.json())
 app.use(cors())
 
-const path = require('path');
+//const path = require('path');
 
 app.use(express.static(path.resolve(__dirname, '../client/public')));
 
