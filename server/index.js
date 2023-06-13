@@ -1,7 +1,7 @@
 import express from "express"
 import mysql from "mysql"
 import cors from "cors"
-import{PORT} from './config.js'
+import{PORT} from 'config.js'
 import{
     DB_HOST,
     DB_USER,
